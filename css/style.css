@@ -1,0 +1,213 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* color: hsl(228, 45%, 44%); */
+
+
+.home{
+  background-color: rgba(0, 0, 0, 0.858);
+  height: 100vh;
+}
+
+
+/* Glassmorphism card effect */
+
+.cardd1{
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(65, 73, 86, 0.75);
+  border-radius: 20px;
+  width: 400px;
+  height: 350px;
+ margin-top: 200px;
+ margin-left: 480px;
+ position: absolute;
+}
+
+.cardd1 img{
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgb(78, 84, 92);
+border-radius: 50%;
+padding: 5px;
+width: 35px;
+margin-left: 20px;
+margin-top: 20px;
+}
+
+.cardd1 h3{
+  color: white;
+  margin-top: 15px;
+  margin-left: 17px;
+}
+
+.cardd1 p{
+  color: silver;
+  margin-top: 15px;
+  margin-left: 17px;
+  font-size: 14px;
+}
+
+.cardd1 .btns{
+  margin-top: 25px;
+ margin-left: 16px;
+  
+}
+
+.cardd1 .btns button{
+ padding: 10px 20px 10px 20px;
+ margin: 0 12px 0 12px;
+ backdrop-filter: blur(16px) saturate(180%);
+ -webkit-backdrop-filter: blur(16px) saturate(180%);
+ background-color: rgb(78, 84, 92);
+border-radius: 50%;
+border: none;
+color: silver;
+transition: 0.3s;
+}
+
+.cardd1 .btns button:focus{
+  background-color: orange;
+  color: white;
+  transition: 0.3s;
+}
+
+.cardd1 .su{
+  border: none;
+  width: 330px;
+  height: 36px;
+  margin-top: 30px;
+  margin-left: 35px;
+  border-radius: 50px;
+  color: white;
+  background-color: orange;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cardd1 .su:hover{
+  color: orange;
+  background-color: white;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+.second{
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(65, 73, 86, 0.75);
+  border-radius: 20px;
+  width: 400px;
+  height: 350px;
+ margin-top: 200px;
+ margin-left: 480px;
+ position: absolute;
+ display: none;
+}
+
+.second img{
+  margin-top: 30px;
+  margin-left: 110px;
+}
+
+.second .you{
+  backdrop-filter: blur(16px) saturate(180%);
+ -webkit-backdrop-filter: blur(16px) saturate(180%);
+ background-color: rgb(78, 84, 92);
+ width: 240px;
+ height: 28px;
+ padding-left: 25px;
+ padding-top: 2px;
+ border-radius: 50px;
+ color: orange;
+ font-weight: 600;
+ margin-left: 77px;
+ margin-top: 20px;
+}
+
+.second h3{
+  color: white;
+  margin-left: 123px;
+}
+
+.second .we{
+  text-align: center;
+  color: silver;
+}
+
+
+
+
+@media (max-width:968px) {
+
+  .cardd1{
+    margin-left: 250px;
+  }
+  .second{
+ margin-left: 250px;
+  }
+}
+
+
+@media (max-width:768px) {
+
+  .cardd1{
+    margin-left: 130px;
+  }
+  .second{
+ margin-left: 130px;
+  }
+}
+
+
+@media (max-width:568px) {
+
+  .cardd1{
+    margin-left: 50px;
+  }
+  .second{
+ margin-left: 50px;
+  }
+}
+
+@media (max-width:420px) {
+
+  .cardd1{
+    margin-left: 5px;
+  }
+  .second{
+ margin-left: 5px;
+  }
+}
+
+
+
+@media (max-width:400px) {
+
+  .cardd1{
+    margin-left: 4px;
+    width: 380px;
+  }
+
+  .su{
+    margin-left: 25px !important;
+  }
+
+  .second{
+    margin-left: 4px;
+    width: 380px;
+  }
+}
