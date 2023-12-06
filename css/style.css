@@ -1,32 +1,31 @@
-*{
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-}
-
-/* color: hsl(228, 45%, 44%); */
+} 
 
 
-.home{
+main {
   background-color: rgba(0, 0, 0, 0.858);
   height: 100vh;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-
-/* Glassmorphism card effect */
-
-.cardd1{
+.cardd1,
+.second {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(65, 73, 86, 0.75);
   border-radius: 20px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 350px;
- margin-top: 200px;
- margin-left: 480px;
- position: absolute;
+  position: relative;
 }
+
 
 .cardd1 img{
   backdrop-filter: blur(16px) saturate(180%);
@@ -39,44 +38,44 @@ margin-left: 20px;
 margin-top: 20px;
 }
 
-.cardd1 h3{
+.cardd1 h3 {
   color: white;
-  margin-top: 15px;
   margin-left: 17px;
+  margin-top: 20px;
 }
 
-.cardd1 p{
+.cardd1 p {
   color: silver;
   margin-top: 15px;
   margin-left: 17px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
-.cardd1 .btns{
+.cardd1 .btns,
+.cardd1 .su {
   margin-top: 25px;
- margin-left: 16px;
-  
+  margin-left: 16px;
 }
 
-.cardd1 .btns button{
- padding: 10px 20px 10px 20px;
- margin: 0 12px 0 12px;
- backdrop-filter: blur(16px) saturate(180%);
- -webkit-backdrop-filter: blur(16px) saturate(180%);
- background-color: rgb(78, 84, 92);
-border-radius: 50%;
-border: none;
-color: silver;
-transition: 0.3s;
+.cardd1 .btns button {
+  padding: 10px 20px 10px 20px;
+  margin: 0 12px 0 12px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgb(78, 84, 92);
+  border-radius: 50%;
+  border: none;
+  color: silver;
+  transition: 0.3s;
 }
 
-.cardd1 .btns button:focus{
+.cardd1 .btns button:focus {
   background-color: orange;
   color: white;
   transition: 0.3s;
 }
 
-.cardd1 .su{
+.cardd1 .su {
   border: none;
   width: 330px;
   height: 36px;
@@ -91,123 +90,46 @@ transition: 0.3s;
   transition: 0.3s;
 }
 
-.cardd1 .su:hover{
+.cardd1 .su:hover {
   color: orange;
   background-color: white;
   transition: 0.3s;
 }
 
-
-
-
-
-
-
-
-
-.second{
+.second .you {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(65, 73, 86, 0.75);
-  border-radius: 20px;
-  width: 400px;
-  height: 350px;
- margin-top: 200px;
- margin-left: 480px;
- position: absolute;
- display: none;
+  background-color: rgb(78, 84, 92);
+  width: 240px;
+  height: 28px;
+  padding-left: 28px;
+  padding-top: 2px;
+  border-radius: 50px;
+  color: orange;
+  font-weight: 600 ;
+  margin-left: 77px;
+  margin-top: 20px;
 }
 
-.second img{
+.second .we {
+  text-align: center;
+  color: silver;
+  width: 360px;
+ font-size: 17px;
+ margin-left: 23px;
+}
+
+.second h3{
+color: white;
+text-align: center;
+font-size: 30px;
+}
+
+.second img {
   margin-top: 30px;
   margin-left: 110px;
 }
 
-.second .you{
-  backdrop-filter: blur(16px) saturate(180%);
- -webkit-backdrop-filter: blur(16px) saturate(180%);
- background-color: rgb(78, 84, 92);
- width: 240px;
- height: 28px;
- padding-left: 25px;
- padding-top: 2px;
- border-radius: 50px;
- color: orange;
- font-weight: 600;
- margin-left: 77px;
- margin-top: 20px;
-}
-
-.second h3{
-  color: white;
-  margin-left: 123px;
-}
-
-.second .we{
-  text-align: center;
-  color: silver;
-}
-
-
-
-
-@media (max-width:968px) {
-
-  .cardd1{
-    margin-left: 250px;
+.second{
+  display: none;
   }
-  .second{
- margin-left: 250px;
-  }
-}
-
-
-@media (max-width:768px) {
-
-  .cardd1{
-    margin-left: 130px;
-  }
-  .second{
- margin-left: 130px;
-  }
-}
-
-
-@media (max-width:568px) {
-
-  .cardd1{
-    margin-left: 50px;
-  }
-  .second{
- margin-left: 50px;
-  }
-}
-
-@media (max-width:420px) {
-
-  .cardd1{
-    margin-left: 5px;
-  }
-  .second{
- margin-left: 5px;
-  }
-}
-
-
-
-@media (max-width:400px) {
-
-  .cardd1{
-    margin-left: 4px;
-    width: 380px;
-  }
-
-  .su{
-    margin-left: 25px !important;
-  }
-
-  .second{
-    margin-left: 4px;
-    width: 380px;
-  }
-}
